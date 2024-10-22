@@ -4,7 +4,7 @@ public class RockPaperScissors {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String playAgain;
+        String playAgain = "";
         String playerA;
         String playerB;
         String rock = "r";
@@ -56,6 +56,7 @@ public class RockPaperScissors {
             }
 
             System.out.println("Do you want to play again Y or N");
+            playAgain = scan.nextLine();
         } while (playAgain.equalsIgnoreCase("y"));
     }
 }
